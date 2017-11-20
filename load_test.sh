@@ -1,7 +1,5 @@
 #!/bin/sh
 
-set -x
-
 
 curl "http://client/router/health" || echo 'client failed!'
 curl "http://router/metrics" || echo 'router failed!'
